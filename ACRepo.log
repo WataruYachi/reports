@@ -1,9 +1,10 @@
-This is e-pTeX, Version 3.14159265-p3.7.1-161114-2.6 (utf8.sjis) (TeX Live 2017/W32TeX) (preloaded format=platex 2018.1.5)  5 FEB 2018 21:46
+This is e-pTeX, Version 3.14159265-p3.7.1-161114-2.6 (utf8.sjis) (TeX Live 2017/W32TeX) (preloaded format=platex 2018.1.5)  8 FEB 2018 22:40
 entering extended mode
- restricted \write18 enabled.
+ \write18 enabled.
+ file:line:error style messages enabled.
  %&-line parsing enabled.
-**./ACRepo.tex
-(./ACRepo.tex
+**e:/reports/reports/ACRepo.tex
+(e:/reports/reports/ACRepo.tex
 pLaTeX2e <2017/10/28>+3 (based on LaTeX2e <2017-04-15>)
 Babel <3.15> and hyphenation patterns for 84 language(s) loaded.
 (c:/texlive/2017/texmf-dist/tex/platex/jsclasses/jsarticle.cls
@@ -787,25 +788,29 @@ File: pgflibraryarrows.code.tex 2013/09/23 v3.0.1a (rcs-revision 1.16)
 (c:/texlive/2017/texmf-dist/tex/generic/circuitikz/pgfcirccurrent.tex)
 (c:/texlive/2017/texmf-dist/tex/generic/circuitikz/pgfcircflow.tex)
 (c:/texlive/2017/texmf-dist/tex/generic/circuitikz/pgfcircpath.tex))
+(c:/texlive/2017/texmf-dist/tex/latex/threeparttable/threeparttable.sty
+Package: threeparttable 2003/06/13  v 3.0
+\@tempboxb=\box81
+)
 (./ACRepo.aux)
 \openout1 = `ACRepo.aux'.
 
-LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 9.
-LaTeX Font Info:    ... okay on input line 9.
-LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 9.
-LaTeX Font Info:    ... okay on input line 9.
-LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 9.
-LaTeX Font Info:    ... okay on input line 9.
-LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 9.
-LaTeX Font Info:    ... okay on input line 9.
-LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 9.
-LaTeX Font Info:    ... okay on input line 9.
-LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 9.
-LaTeX Font Info:    ... okay on input line 9.
-LaTeX Font Info:    Checking defaults for JY1/mc/m/n on input line 9.
-LaTeX Font Info:    ... okay on input line 9.
-LaTeX Font Info:    Checking defaults for JT1/mc/m/n on input line 9.
-LaTeX Font Info:    ... okay on input line 9.
+LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 11.
+LaTeX Font Info:    ... okay on input line 11.
+LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 11.
+LaTeX Font Info:    ... okay on input line 11.
+LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 11.
+LaTeX Font Info:    ... okay on input line 11.
+LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 11.
+LaTeX Font Info:    ... okay on input line 11.
+LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 11.
+LaTeX Font Info:    ... okay on input line 11.
+LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 11.
+LaTeX Font Info:    ... okay on input line 11.
+LaTeX Font Info:    Checking defaults for JY1/mc/m/n on input line 11.
+LaTeX Font Info:    ... okay on input line 11.
+LaTeX Font Info:    Checking defaults for JT1/mc/m/n on input line 11.
+LaTeX Font Info:    ... okay on input line 11.
 
 (c:/texlive/2017/texmf-dist/tex/latex/translator/translator-basic-dictionary-En
 glish.dict
@@ -817,57 +822,81 @@ File: siunitx-abbreviations.cfg 2017/11/26 v2.7k siunitx: Abbreviated units
 ABD: EveryShipout initializing macros
 \c__siunitx_mathsf_int=\count296
 LaTeX Font Info:    Font shape `JY1/mc/m/n' will be
-(Font)              scaled to size 6.72699pt on input line 9.
+(Font)              scaled to size 6.72699pt on input line 11.
 LaTeX Font Info:    Font shape `JY1/mc/m/n' will be
-(Font)              scaled to size 4.805pt on input line 9.
-LaTeX Font Info:    Try loading font information for U+msa on input line 9.
+(Font)              scaled to size 4.805pt on input line 11.
+LaTeX Font Info:    Try loading font information for U+msa on input line 11.
 
 (c:/texlive/2017/texmf-dist/tex/latex/amsfonts/umsa.fd
 File: umsa.fd 2013/01/14 v3.01 AMS symbols A
 )
-LaTeX Font Info:    Try loading font information for U+msb on input line 9.
+LaTeX Font Info:    Try loading font information for U+msb on input line 11.
 
 (c:/texlive/2017/texmf-dist/tex/latex/amsfonts/umsb.fd
 File: umsb.fd 2013/01/14 v3.01 AMS symbols B
 )
 \c__siunitx_mathtt_int=\count297
 LaTeX Font Info:    Font shape `JT1/mc/m/n' will be
-(Font)              scaled to size 13.83836pt on input line 10.
+(Font)              scaled to size 13.83836pt on input line 12.
 LaTeX Font Info:    Font shape `JY1/mc/m/n' will be
-(Font)              scaled to size 13.83836pt on input line 10.
+(Font)              scaled to size 13.83836pt on input line 12.
 LaTeX Font Info:    Font shape `JT1/gt/m/n' will be
-(Font)              scaled to size 13.83836pt on input line 10.
+(Font)              scaled to size 13.83836pt on input line 12.
 LaTeX Font Info:    Font shape `JY1/gt/m/n' will be
-(Font)              scaled to size 13.83836pt on input line 10.
-LaTeX Font Info:    Try loading font information for OMS+cmr on input line 18.
+(Font)              scaled to size 13.83836pt on input line 12.
+LaTeX Font Info:    Try loading font information for OMS+cmr on input line 20.
 
 (c:/texlive/2017/texmf-dist/tex/latex/base/omscmr.fd
 File: omscmr.fd 2014/09/29 v2.5h Standard LaTeX font definitions
 )
 LaTeX Font Info:    Font shape `OMS/cmr/m/n' in size <10> not available
-(Font)              Font shape `OMS/cmsy/m/n' tried instead on input line 18.
+(Font)              Font shape `OMS/cmsy/m/n' tried instead on input line 20.
 LaTeX Font Info:    Font shape `JT1/mc/m/n' will be
-(Font)              scaled to size 11.53198pt on input line 27.
+(Font)              scaled to size 11.53198pt on input line 29.
 LaTeX Font Info:    Font shape `JY1/mc/m/n' will be
-(Font)              scaled to size 11.53198pt on input line 27.
+(Font)              scaled to size 11.53198pt on input line 29.
 LaTeX Font Info:    Font shape `JT1/gt/m/n' will be
-(Font)              scaled to size 11.53198pt on input line 27.
+(Font)              scaled to size 11.53198pt on input line 29.
 LaTeX Font Info:    Font shape `JY1/gt/m/n' will be
-(Font)              scaled to size 11.53198pt on input line 27.
+(Font)              scaled to size 11.53198pt on input line 29.
 LaTeX Font Info:    Font shape `JT1/gt/m/n' will be
-(Font)              scaled to size 9.60999pt on input line 44.
+(Font)              scaled to size 9.60999pt on input line 46.
 LaTeX Font Info:    Font shape `JY1/gt/m/n' will be
-(Font)              scaled to size 9.60999pt on input line 44.
- [1
+(Font)              scaled to size 9.60999pt on input line 46.
+LaTeX Font Info:    Font shape `JT1/mc/m/n' will be
+(Font)              scaled to size 8.64899pt on input line 63.
+LaTeX Font Info:    Font shape `JY1/mc/m/n' will be
+(Font)              scaled to size 8.64899pt on input line 63.
+LaTeX Font Info:    Font shape `JT1/mc/m/n' will be
+(Font)              scaled to size 6.72699pt on input line 67.
+LaTeX Font Info:    Font shape `JY1/mc/m/n' will be
+(Font)              scaled to size 5.76599pt on input line 76.
+LaTeX Font Info:    Font shape `JT1/mc/m/n' will be
+(Font)              scaled to size 5.76599pt on input line 76.
 
-] (./ACRepo.aux) ) 
+
+LaTeX Warning: `h' float specifier changed to `ht'.
+
+[1
+
+]
+File: ./figure/RL_Series_Circut.png Graphic file (type bmp)
+<./figure/RL_Series_Circut.png>
+
+
+LaTeX Warning: `h' float specifier changed to `ht'.
+
+[2]
+File: ./figure/RC_Series_Circuit.png Graphic file (type bmp)
+<./figure/RC_Series_Circuit.png>
+ [3] (./ACRepo.aux) ) 
 Here is how much of TeX's memory you used:
- 28865 strings out of 493643
- 671967 string characters out of 6151779
- 759713 words of memory out of 5000000
- 32175 multiletter control sequences out of 15000+600000
- 540911 words of font info for 74 fonts, out of 8000000 for 9000
+ 28970 strings out of 493643
+ 673580 string characters out of 6151779
+ 763598 words of memory out of 5000000
+ 32262 multiletter control sequences out of 15000+600000
+ 545698 words of font info for 95 fonts, out of 8000000 for 9000
  934 hyphenation exceptions out of 8191
- 55i,5n,54p,10377b,378s stack positions out of 5000i,500n,10000p,200000b,80000s
+ 55i,15n,54p,10394b,532s stack positions out of 5000i,500n,10000p,200000b,80000s
 
-Output written on ACRepo.dvi (1 page, 3972 bytes).
+Output written on ACRepo.dvi (3 pages, 10604 bytes).
