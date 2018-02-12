@@ -7,6 +7,8 @@
 \usepackage{circuitikz}
 \usepackage{threeparttable}
 \usepackage{tabularx}
+\usepackage{amsmath}
+\usepackage{amssymb}
 \graphicspath{{./figure/}}
 \newcolumntype{Y}{&gt;{\centering\arraybackslash}X} %中央揃え
 
@@ -424,4 +426,146 @@ $|\dot V_R|, |\dot V_C|$を測定する。ただし、周波数は1 [kHz]、抵�
   \item 正確な周波数を測定したい場合は、オシロスコープを使用するべきである。
   \item ディジタルマルチメータを利用する際は、高い周波数の時には正確な値が測定できないことに注意するべきである。
 \end{itemize}
+
+\subsection{電圧最大値$V_m$時に実効値が$\frac{V_m}{\sqrt{2}}$になることを示す}
+\begin{eqnarray}
+  I & = & \sqrt{\frac{1}{T} \int_0^T i^2 dt} = \sqrt{\frac{1}{T} \int_0^T {I_m}^2\sin^2(\omega t + \theta) dt}\nonumber \\
+ & = &\sqrt{\frac{{I_m}^2}{T} \int_0^T \frac{1}{2} \{1 - \cos2(\omega t + \theta)\} dt}\nonumber \\
+ & = & \sqrt{\frac{{I_m}^2}{2T} \left[t - \frac{1}{2\omega}\sin2(\omega t + \theta)\right]_0^T}\nonumber \\
+ & = & \sqrt{\frac{{I_m}^2}{2T} \{T - \frac{1}{2\omega}\sin2(\omega T + \theta) - 0 + \frac{1}{2\omega}\sin2\theta\}}\nonumber \\
+ & = & \sqrt{\frac{{I_m}^2}{2T} \{T - \frac{1}{2\omega}\sin2(4\pi + 2\theta) + \frac{1}{2\omega}\sin2\theta\}} = \sqrt{\frac{{I_m}^2}{2}}\nonumber  \\
+ & = & \frac{I_m}{\sqrt{2}}\nonumber 
+\end{eqnarray}
+
+\subsection{実効値を求める}
+以下の式で与えられる方形波の実効値を求める。
+\begin{eqnarray*}
+  v(t) = 
+  \begin{cases}
+    V_m (0\leq t < T/2)\\
+    -V_m (T/2 \leq t < T)
+  \end{cases}
+\end{eqnarray*}
+\begin{eqnarray*}
+  V & = & \sqrt {\dfrac {1}{T}\int ^{T}_{0}v\left( t\right) ^{2}dt} \\
+  & = & \sqrt {\dfrac {1}{T}\left\{ \int ^{\frac{T}{2}}_{0}{V_m}^2 dt+\int ^{T}_{\frac {T}{2}}{V_m}^2 dt\right\} }\\
+  & = & \sqrt{\frac{{V_m}^2}{T} (\frac{T}{2} + \frac{T}{2})} = \sqrt{\frac{{V_m}^2}{T} T} = \sqrt{{V_m}^2} = V_m\\
+  \therefore V & = & V_m
+\end{eqnarray*}
+
+\subsection{瞬時値の導出}
+\begin{figure}[h]
+  \centering
+  \includegraphics[scale=0.4]{RC_Series_Circuit.png}
+  \caption{RC直列回路}
+  \label{fig:RC_Series_Circuit2}
+\end{figure}
+図\ref{fig:fig:RC_Series_Circuit2}に示す回路に、$v = V_m\sin(\omega t + \theta)$の電圧が印加された時、
+抵抗、キャパシタンスに加わる電圧の瞬時値を求める式を導出する。
+
+回路の合成インピーダンス $\dot Z$ は
+\begin{eqnarray*}
+    \dot Z = R + \frac{1}{j\omega C}
+\end{eqnarray*}
+となり、オームの法則より、電流$\dot I$は
+\begin{eqnarray*}
+    \dot V = (R + \frac{1}{j\omega C})\dot I\\
+    \dot I = \frac{\dot V}{R + \frac{1}{j\omega C}}
+\end{eqnarray*}
+となる。よって抵抗Rにかかる電圧$\dot V_R$は
+\begin{eqnarray*}
+  \dot V_R & = & R \dot I\\
+  & = & \frac{\dot V}{1 - j\frac{1}{j\omega RC}}
+\end{eqnarray*}
+となる。ここで、分母を変形する。
+\begin{eqnarray*}
+  1- j\frac{1}{\omega RC} = \sqrt{1 + (\frac{1}{\omega RC})^2}\angle -(\tan^{-1}(\frac{1}{\omega RC}))
+\end{eqnarray*}
+よって
+\begin{eqnarray*}
+  \dot V_R = \frac{\dot V \angle \tan^{-1}(\frac{1}{\omega RC})}{\sqrt{1 + (\frac{1}{\omega RC})^2}}
+\end{eqnarray*}
+これを瞬時値として表現すると
+\begin{eqnarray*}
+  v_R = \frac{V_m}{\sqrt{1 + (\frac{1}{\omega RC})^2}} \sin(\omega t + \theta) ただし、\theta = \tan^{-1}(\frac{1}{\omega RC})
+\end{eqnarray*}
+となる。
+
+同様にキャパシタンスCについて求めると
+\begin{eqnarray*}
+  v_C = \frac{V_m}{\sqrt{1 + (\omega RC)^2}}\sin(\omega t + \theta) ただし、\theta = \tan^{-1}(\omega RC)
+\end{eqnarray*}
+となる。
+
+\subsection{式と結果の比較}
+先に導出した瞬時値の式と、実験結果(表\ref{tb:result8})を比較する。
+
+$V$については、回路が同等なのでその式は同様に$10.6\sin(6283.185t)$であると考えられる。
+
+$V_R$について、その最大値と$V$との位相差は
+\begin{eqnarray*}
+  V_R & = & \frac{V_m}{\sqrt{1 + (\frac{1}{\omega RC})^2}}\\
+  & \fallingdotseq & \frac{10.6}{1.28}\\
+  & \fallingdotseq & 8.28 [V]\\
+  \theta_R & = &\tan^{-1}(\frac{1}{\omega RC})\\
+  & \fallingdotseq & 0.672 [rad]
+\end{eqnarray*}
+となる。
+
+同様に$V_C$についても
+\begin{eqnarray*}
+  V_C & \fallingdotseq & 6.58 [V]\\
+  \theta_C & \fallingdotseq & 0.899 [rad]
+\end{eqnarray*}
+となる。
+
+よってそれぞれの式は、
+\begin{eqnarray*}
+  v_R(t) = 8.28\sin(6283.185t + 0.672)\\
+  v_C(t) = 6.58\sin(6283.185t + 0.899)
+\end{eqnarray*}
+となる。これを表\ref{tb:result8}の式と比較すると、かなり近い値になっていると考えられる。
+
+\subsection{フェーザ図}
+5.2節の実験結果に基づいてフェーザ図を作成した。
+以下の図\ref{fig:f}に示す。
+\begin{figure}[h]
+  \centering
+  \includegraphics[scale=0.4]{f.png}
+  \caption{フェーザ図}
+  \label{fig:f}
+\end{figure}
+
+\subsection{キャパシタンスと極板面積の関係、測定結果の考察}
+キャパシタンスと極板面積の関係は、式
+\begin{eqnarray*}
+  C = \epsilon_0 \epsilon_r \frac{S}{d}
+\end{eqnarray*}
+より、比例関係にあるとわかる。
+
+実験に使用した$C_1, C_2$の関係は、
+面積が2倍になっているので、そのキャパシタンスの大きさも2倍になると予想できる。
+実際の$C_1$のキャパシタンスは、4.86$\times 10^{-13}$、$C_2$のキャパシタンスは2.20$\times 10^{-13}$
+であることから、関係は成り立っておらず、コンデンサ作製の際に何らかの不手際があったと考えられる。
+
+\subsection{インダクタンスについて、巻数・コイル長・長岡係数との関係、及び実験との比較}
+\begin{eqnarray*}
+  L = K \frac{\pi^2 D^2 N^2}{l} \times 10^{-7}
+\end{eqnarray*}
+式より、インダクタンスは巻数、長岡係数と比例関係にあり、コイル長とは反比例の関係にある。
+
+実験に用いたコイル$L_1, L_2$について、そのインダクタンスを比較すると、$L_2$の巻数が2倍であるので
+インダクタンスの値は$L_1$の4倍になると予想できる。
+
+実際のインダクタンスは、$L_1 = 7.77\times 10^{-5}, L_2 = 2.60 \times 10^{-4}$となっており、4倍とまではいかないものの、
+巻数によってインダクタンスが大きくなることが確認できた。
+
+\subsection{キャパシタンス$C_1, C_2$直・並列接続時の合成キャパシタンスの式を求め、実験結果と比較する}
+直列接続時の合成キャパシタンス$C$は
+\begin{eqnarray*}
+  C & = &\frac{1}{C_1} + \frac{1}{C_2}\\
+  & = &\frac{C_1 C_2}{C_1 + C_2}\\
+  & = &\frac{4.86 \times 10^{-13} \times 2.20 \times 10^{-13} }{4.86 \times 10^{-13} + 2.20 \times 10^{-13} }\\
+  & = &1.51 \times 10^{-13}
+\end{eqnarray*}
 \end{document}
