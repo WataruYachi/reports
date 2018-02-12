@@ -1,4 +1,4 @@
-This is e-pTeX, Version 3.14159265-p3.7.1-161114-2.6 (utf8.sjis) (TeX Live 2017/W32TeX) (preloaded format=platex 2018.1.5)  12 FEB 2018 13:37
+This is e-pTeX, Version 3.14159265-p3.7.1-161114-2.6 (utf8.sjis) (TeX Live 2017/W32TeX) (preloaded format=platex 2018.1.5)  12 FEB 2018 21:43
 entering extended mode
  \write18 enabled.
  file:line:error style messages enabled.
@@ -792,25 +792,34 @@ File: pgflibraryarrows.code.tex 2013/09/23 v3.0.1a (rcs-revision 1.16)
 Package: threeparttable 2003/06/13  v 3.0
 \@tempboxb=\box81
 )
-(./ACRepo.aux)
+(c:/texlive/2017/texmf-dist/tex/latex/tools/tabularx.sty
+Package: tabularx 2016/02/03 v2.11 `tabularx' package (DPC)
+\TX@col@width=\dimen293
+\TX@old@table=\dimen294
+\TX@old@col=\dimen295
+\TX@target=\dimen296
+\TX@delta=\dimen297
+\TX@cols=\count296
+\TX@ftn=\toks36
+) (./ACRepo.aux)
 \openout1 = `ACRepo.aux'.
 
-LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 11.
-LaTeX Font Info:    ... okay on input line 11.
-LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 11.
-LaTeX Font Info:    ... okay on input line 11.
-LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 11.
-LaTeX Font Info:    ... okay on input line 11.
-LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 11.
-LaTeX Font Info:    ... okay on input line 11.
-LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 11.
-LaTeX Font Info:    ... okay on input line 11.
-LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 11.
-LaTeX Font Info:    ... okay on input line 11.
-LaTeX Font Info:    Checking defaults for JY1/mc/m/n on input line 11.
-LaTeX Font Info:    ... okay on input line 11.
-LaTeX Font Info:    Checking defaults for JT1/mc/m/n on input line 11.
-LaTeX Font Info:    ... okay on input line 11.
+LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 13.
+LaTeX Font Info:    ... okay on input line 13.
+LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 13.
+LaTeX Font Info:    ... okay on input line 13.
+LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 13.
+LaTeX Font Info:    ... okay on input line 13.
+LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 13.
+LaTeX Font Info:    ... okay on input line 13.
+LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 13.
+LaTeX Font Info:    ... okay on input line 13.
+LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 13.
+LaTeX Font Info:    ... okay on input line 13.
+LaTeX Font Info:    Checking defaults for JY1/mc/m/n on input line 13.
+LaTeX Font Info:    ... okay on input line 13.
+LaTeX Font Info:    Checking defaults for JT1/mc/m/n on input line 13.
+LaTeX Font Info:    ... okay on input line 13.
 
 (c:/texlive/2017/texmf-dist/tex/latex/translator/translator-basic-dictionary-En
 glish.dict
@@ -820,59 +829,59 @@ Dictionary: translator-basic-dictionary, Language: English
 File: siunitx-abbreviations.cfg 2017/11/26 v2.7k siunitx: Abbreviated units
 )
 ABD: EveryShipout initializing macros
-\c__siunitx_mathsf_int=\count296
+\c__siunitx_mathsf_int=\count297
 LaTeX Font Info:    Font shape `JY1/mc/m/n' will be
-(Font)              scaled to size 6.72699pt on input line 11.
+(Font)              scaled to size 6.72699pt on input line 13.
 LaTeX Font Info:    Font shape `JY1/mc/m/n' will be
-(Font)              scaled to size 4.805pt on input line 11.
-LaTeX Font Info:    Try loading font information for U+msa on input line 11.
+(Font)              scaled to size 4.805pt on input line 13.
+LaTeX Font Info:    Try loading font information for U+msa on input line 13.
 
 (c:/texlive/2017/texmf-dist/tex/latex/amsfonts/umsa.fd
 File: umsa.fd 2013/01/14 v3.01 AMS symbols A
 )
-LaTeX Font Info:    Try loading font information for U+msb on input line 11.
+LaTeX Font Info:    Try loading font information for U+msb on input line 13.
 
 (c:/texlive/2017/texmf-dist/tex/latex/amsfonts/umsb.fd
 File: umsb.fd 2013/01/14 v3.01 AMS symbols B
 )
-\c__siunitx_mathtt_int=\count297
+\c__siunitx_mathtt_int=\count298
 LaTeX Font Info:    Font shape `JT1/mc/m/n' will be
-(Font)              scaled to size 13.83836pt on input line 12.
+(Font)              scaled to size 13.83836pt on input line 14.
 LaTeX Font Info:    Font shape `JY1/mc/m/n' will be
-(Font)              scaled to size 13.83836pt on input line 12.
+(Font)              scaled to size 13.83836pt on input line 14.
 LaTeX Font Info:    Font shape `JT1/gt/m/n' will be
-(Font)              scaled to size 13.83836pt on input line 12.
+(Font)              scaled to size 13.83836pt on input line 14.
 LaTeX Font Info:    Font shape `JY1/gt/m/n' will be
-(Font)              scaled to size 13.83836pt on input line 12.
-LaTeX Font Info:    Try loading font information for OMS+cmr on input line 20.
+(Font)              scaled to size 13.83836pt on input line 14.
+LaTeX Font Info:    Try loading font information for OMS+cmr on input line 22.
 
 (c:/texlive/2017/texmf-dist/tex/latex/base/omscmr.fd
 File: omscmr.fd 2014/09/29 v2.5h Standard LaTeX font definitions
 )
 LaTeX Font Info:    Font shape `OMS/cmr/m/n' in size <10> not available
-(Font)              Font shape `OMS/cmsy/m/n' tried instead on input line 20.
+(Font)              Font shape `OMS/cmsy/m/n' tried instead on input line 22.
 LaTeX Font Info:    Font shape `JT1/mc/m/n' will be
-(Font)              scaled to size 11.53198pt on input line 29.
+(Font)              scaled to size 11.53198pt on input line 31.
 LaTeX Font Info:    Font shape `JY1/mc/m/n' will be
-(Font)              scaled to size 11.53198pt on input line 29.
+(Font)              scaled to size 11.53198pt on input line 31.
 LaTeX Font Info:    Font shape `JT1/gt/m/n' will be
-(Font)              scaled to size 11.53198pt on input line 29.
+(Font)              scaled to size 11.53198pt on input line 31.
 LaTeX Font Info:    Font shape `JY1/gt/m/n' will be
-(Font)              scaled to size 11.53198pt on input line 29.
+(Font)              scaled to size 11.53198pt on input line 31.
 LaTeX Font Info:    Font shape `JT1/gt/m/n' will be
-(Font)              scaled to size 9.60999pt on input line 46.
+(Font)              scaled to size 9.60999pt on input line 48.
 LaTeX Font Info:    Font shape `JY1/gt/m/n' will be
-(Font)              scaled to size 9.60999pt on input line 46.
+(Font)              scaled to size 9.60999pt on input line 48.
 LaTeX Font Info:    Font shape `JT1/mc/m/n' will be
-(Font)              scaled to size 8.64899pt on input line 63.
+(Font)              scaled to size 8.64899pt on input line 65.
 LaTeX Font Info:    Font shape `JY1/mc/m/n' will be
-(Font)              scaled to size 8.64899pt on input line 63.
+(Font)              scaled to size 8.64899pt on input line 65.
 LaTeX Font Info:    Font shape `JT1/mc/m/n' will be
-(Font)              scaled to size 6.72699pt on input line 68.
+(Font)              scaled to size 6.72699pt on input line 70.
 LaTeX Font Info:    Font shape `JY1/mc/m/n' will be
-(Font)              scaled to size 5.76599pt on input line 77.
+(Font)              scaled to size 5.76599pt on input line 79.
 LaTeX Font Info:    Font shape `JT1/mc/m/n' will be
-(Font)              scaled to size 5.76599pt on input line 77.
+(Font)              scaled to size 5.76599pt on input line 79.
 
 
 LaTeX Warning: `h' float specifier changed to `ht'.
@@ -889,14 +898,61 @@ LaTeX Warning: `h' float specifier changed to `ht'.
 [2]
 File: ./figure/RC_Series_Circuit.png Graphic file (type bmp)
 <./figure/RC_Series_Circuit.png>
- [3] [4] [5] [6] (./ACRepo.aux) ) 
+ [3]
+File: ./figure/experimental_circuit.png Graphic file (type bmp)
+<./figure/experimental_circuit.png>
+ [4]
+File: ./figure/experimental_circuit2.png Graphic file (type bmp)
+<./figure/experimental_circuit2.png>
+ [5]
+Underfull \hbox (badness 1406) in paragraph at lines 271--271
+[]|\JY1/mc/m/n/10 オシロスコ ープ
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 294--294
+[]|\JY1/mc/m/n/10 オシロス
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 294--294
+[]|\JY1/mc/m/n/10 オシロス
+ []
+
+
+Underfull \hbox (badness 1867) in paragraph at lines 294--294
+\JY1/mc/m/n/10 コ ープ \OT1/cmr/m/n/10 (\JY1/mc/m/n/10 最
+ []
+
+
+Underfull \hbox (badness 1867) in paragraph at lines 294--294
+\JY1/mc/m/n/10 路計 \OT1/cmr/m/n/10 (\JY1/mc/m/n/10 交流
+ []
+
+File: ./figure/image001.png Graphic file (type bmp)
+<./figure/image001.png>
+
+Overfull \hbox (1.60202pt too wide) in paragraph at lines 299--300
+ [][] 
+ []
+
+
+LaTeX Warning: `h' float specifier changed to `ht'.
+
+File: ./figure/image2.png Graphic file (type bmp)
+<./figure/image2.png>
+[6]
+
+LaTeX Warning: `h' float specifier changed to `ht'.
+
+[7] [8] [9] [10] (./ACRepo.aux) ) 
 Here is how much of TeX's memory you used:
- 28971 strings out of 493643
- 673597 string characters out of 6151779
- 763606 words of memory out of 5000000
- 32263 multiletter control sequences out of 15000+600000
+ 29046 strings out of 493643
+ 674744 string characters out of 6151779
+ 783827 words of memory out of 5000000
+ 32331 multiletter control sequences out of 15000+600000
  545698 words of font info for 95 fonts, out of 8000000 for 9000
  934 hyphenation exceptions out of 8191
- 55i,15n,54p,10394b,532s stack positions out of 5000i,500n,10000p,200000b,80000s
+ 55i,15n,54p,10394b,536s stack positions out of 5000i,500n,10000p,200000b,80000s
 
-Output written on ACRepo.dvi (6 pages, 20588 bytes).
+Output written on ACRepo.dvi (10 pages, 35704 bytes).
