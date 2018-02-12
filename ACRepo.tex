@@ -404,11 +404,21 @@ $|\dot V_R|, |\dot V_C|$を測定する。ただし、周波数は1 [kHz]、抵�
   \end{tabular}
 \end{table}
 
+なお理論値は次のようになった。
+\begin{table}[h]
+  \centering
+  \caption{インダクタンスの理論値}
+  \begin{tabular}{|c|c|}\hline
+    $L_1$ & $8.25\times10^{-5}$\\ \hline
+    $L_2$ & $2.52\times10^{-4}$\\ \hline
+  \end{tabular}
+\end{table}
+
 \subsection{キャパシタンスの制作と測定}
 測定した電圧及び、求めたキャパシタンスを表\ref{tb:result10}に示す。
 \begin{table}[h]
   \centering
-  \caption{インダクタンスの測定}
+  \caption{キャパシタンスの測定}
   \label{tb:result10}
   \begin{tabular}{|c|c|c|c|}\hline
     & $|\dot V_R|$ [V] & $|\dot V_C| [V]$ & $C$\\ \hline
@@ -416,6 +426,16 @@ $|\dot V_R|, |\dot V_C|$を測定する。ただし、周波数は1 [kHz]、抵�
     $C_2$のみ & 0.42 & 6.0 & 2.20$\times 10^{-13}$\\ \hline
     $C_1, C_2$直列接続 & 0.00089 & 6.26 & 4.46$\times 10^{-16}$\\ \hline
     $C_1, C_2$並列接続 & 0.6 & 5.9 & 3.19$\times 10^{-13}$\\ \hline
+  \end{tabular}
+\end{table}
+
+なお理論値は次のようになった。
+\begin{table}[h]
+  \centering
+  \caption{キャパシタンスの理論値}
+  \begin{tabular}{|c|c|}\hline
+    $C_1$ & $4.74\times10^{-12}$\\ \hline
+    $C_2$ & $9.48\times10^{-12}$\\ \hline
   \end{tabular}
 \end{table}
 
@@ -460,7 +480,7 @@ $|\dot V_R|, |\dot V_C|$を測定する。ただし、周波数は1 [kHz]、抵�
   \caption{RC直列回路}
   \label{fig:RC_Series_Circuit2}
 \end{figure}
-図\ref{fig:fig:RC_Series_Circuit2}に示す回路に、$v = V_m\sin(\omega t + \theta)$の電圧が印加された時、
+図7に示す回路に、$v = V_m\sin(\omega t + \theta)$の電圧が印加された時、
 抵抗、キャパシタンスに加わる電圧の瞬時値を求める式を導出する。
 
 回路の合成インピーダンス $\dot Z$ は
@@ -568,4 +588,47 @@ $V_R$について、その最大値と$V$との位相差は
   & = &\frac{4.86 \times 10^{-13} \times 2.20 \times 10^{-13} }{4.86 \times 10^{-13} + 2.20 \times 10^{-13} }\\
   & = &1.51 \times 10^{-13}
 \end{eqnarray*}
+となるはずだが、測定値とはかけ離れている。しかし、$C_1, C_2$よりは小さな値となっている。
+
+並列接続時の合成キャパシタンス$C$は
+\begin{eqnarray*}
+  C & = & C_1 + C_2\\
+  & = & 4.86 \times 10^{-13} + 2.20 \times 10^{-13}\\
+  & = & 7.08 \times 10^{-13}
+\end{eqnarray*}
+となり、こちらも大きくかけ離れている。
+よって考えられるのは、実験に何らかの不備(コイル製作時など)が存在し、正しい値を求めることができなかったということが考えられる。
+
+\subsection{インダクタンス$L_1, L_2$直・並列接続時の合成インダクタンスの式を求め、実験結果と比較する}
+直列接続時の合成インダクタンス$L$は
+\begin{eqnarray*}
+  L & = & L_1 + L_2\\
+  となる。よって、
+  & = & 7.77\times10^{-5} + 2.60 \times 10^{-4}\\
+  & = & 3.377\times10^{-4}
+\end{eqnarray*}
+となる。測定値と比較すると、近い値になっていることが分かり、式に従っていると考えられる。
+
+並列接続時の合成インダクタンス$L$は
+\begin{eqnarray*}
+  L = \frac{1}{L_1} + \frac{1}{L_2}
+\end{eqnarray*}
+となる。よって
+\begin{eqnarray*}
+  L& = &\frac{1}{L_1} + \frac{1}{L_2}\\
+  & = &\frac{L_1L_2}{L_1 + L_2}\\
+  & = & \frac{7.77\times10^{-5} \times 2.60 \times 10^{-4}}{7.77\times10^{-5} + 2.60 \times 10^{-4}}\\
+  & = & \frac{2.0202\times10^{-8}}{3.377\times10^{-4}}\\
+  & = & 5.98\times10^{-5}
+\end{eqnarray*}
+となる。測定値と比較すると、近い値になっていることが分かり、この場合も式に従っていると考えられる。
+
+\section{結論}
+交流での電圧や周波数を測定する場合、正確な値を求めたければ、電圧は交流電子電圧計、周波数はオシロスコープを用いて測定するべきである。
+
+交流電圧のオシロスコープなどで取得した瞬時値の値から、表計算ソフトウェアなどを利用する事によって、電流の瞬時値・実効値、電圧の最大値・平均値、
+周波数や位相差などを求められることがわかった。
+
+RL直列回路やRC直列回路を利用することによって、コイルのインダクタンスや、コンデンサのキャパシタンスが求められることがわかった。
+
 \end{document}

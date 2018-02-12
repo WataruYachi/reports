@@ -1,4 +1,4 @@
-This is e-pTeX, Version 3.14159265-p3.7.1-161114-2.6 (utf8.sjis) (TeX Live 2017/W32TeX) (preloaded format=platex 2018.1.5)  13 FEB 2018 01:26
+This is e-pTeX, Version 3.14159265-p3.7.1-161114-2.6 (utf8.sjis) (TeX Live 2017/W32TeX) (preloaded format=platex 2018.1.5)  13 FEB 2018 02:08
 entering extended mode
  \write18 enabled.
  file:line:error style messages enabled.
@@ -952,33 +952,17 @@ File: ./figure/RC_Series_Circuit.png Graphic file (type bmp)
 
 LaTeX Warning: `h' float specifier changed to `ht'.
 
-LaTeX Font Info:    Font shape `JT1/mc/bx/n' in size <10> not available
-(Font)              Font shape `JT1/gt/m/n' tried instead on input line 463.
-LaTeX Font Info:    Font shape `JT1/gt/m/n' will be
-(Font)              scaled to size 9.60999pt on input line 463.
-LaTeX Font Info:    Font shape `JY1/mc/bx/n' in size <10> not available
-(Font)              Font shape `JY1/gt/m/n' tried instead on input line 463.
-LaTeX Font Info:    Font shape `JY1/gt/m/n' will be
-(Font)              scaled to size 9.60999pt on input line 463.
-
-LaTeX Warning: Reference `fig:fig:RC_Series_Circuit2' on page 11 undefined on i
-nput line 463.
-
 [11] [12]
 File: ./figure/f.png Graphic file (type bmp)
 <./figure/f.png>
- [13] [14] (./ACRepo.aux)
-
-LaTeX Warning: There were undefined references.
-
- ) 
+ [13] [14] [15] (./ACRepo.aux) ) 
 Here is how much of TeX's memory you used:
- 29064 strings out of 493643
- 674994 string characters out of 6151779
+ 29059 strings out of 493643
+ 674917 string characters out of 6151779
  783844 words of memory out of 5000000
- 32345 multiletter control sequences out of 15000+600000
- 547422 words of font info for 102 fonts, out of 8000000 for 9000
+ 32341 multiletter control sequences out of 15000+600000
+ 547114 words of font info for 101 fonts, out of 8000000 for 9000
  934 hyphenation exceptions out of 8191
  55i,15n,54p,10394b,536s stack positions out of 5000i,500n,10000p,200000b,80000s
 
-Output written on ACRepo.dvi (14 pages, 47708 bytes).
+Output written on ACRepo.dvi (15 pages, 52044 bytes).
