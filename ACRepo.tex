@@ -206,11 +206,37 @@ $\epsilon_0は真空中の誘電率、\epsilon_rは金属板間を満たす物�
   \item [(3)](2)で保存したデータから、各電圧の最大と周波数を求める。
   \item [(4)]$VとV_1、VとV_2、V_1とV_2の組み合わせについて$、以下の二通りの方法で位相差を測定する。
     \begin{description}
-      \item [正弦波の時間差から求める]正弦波が同じ位相になる点の時間差$\delta t$から位相差$\phi = \omega \delta t$を以下の式から求める事ができる。
+      \item [正弦波の時間差から求める]正弦波が同じ位相になる点の時間差$\delta t$から位相差$\phi = \omega \delta t$を求める事ができる。
       \item [リサジュー図形から求める]リサジュー図形を用いて、2.3の原理に基づき位相差を求める。
     \end{description}
   \item[(5)]求めた各値から、各電圧の瞬時値を与える式を求める。ただし、位相角$\theta$はゼロとし、$V$を基準とし$V_1, V_2$の位相角を決定する。
 \end{itemize}
 \subsection{インダクタンスの作成と測定}
+\subsubsection{コイルの作製}
+直径7.5 [cm]の塩化ビニル製のパイプとフォルマル線を用いて、25巻と50巻の二種類のコイルを作製する。
+\subsubsection{インダクタンスの測定}
+作製したコイルの内、25巻のものを$L_1$、50巻のものを$L_2$とする。
+以下の四つの場合において、図\ref{fig:RL_Series_Circuit}のRL直列回路をブレッドボード上に作製し、
+$|\dot V_R|, |\dot V_L|$を測定する。ただし、周波数は100 [kHz]、抵抗Rは$100 [\Omega]$とする。
+\begin{itemize}
+  \item [(1)]$L_1$のみ
+  \item [(2)]$L_2$のみ
+  \item [(3)]$L_1, L_2$の直列接続
+  \item [(4)]$L_1, L_2$の並列接続
+\end{itemize}
 \subsection{キャパシタンスの制作と測定}
+\subsubsection{コンデンサの作製}
+アルミホイル、OHPシート、両面テープを用いて、極板の形状が5 [cm] $\times$ 5 [cm]と
+10 [cm] $\times$ 5 [cm]の二種類のコンデンサを作製する。
+\subsubsection{キャパシタンスの測定}
+作製したコンデンサの内、極板形状が5 [cm] $\times$ 5 [cm]のものを$C_1$、
+10 [cm] $\times$ 5 [cm]のものを$C_2$とする。
+以下の四つの場合において、図\ref{fig:RC_Series_Circuit}のRC直列回路をブレッドボード上に作製し、
+$|\dot V_R|, |\dot V_C|$を測定する。ただし、周波数は1 [kHz]、抵抗Rは500 $[k\Omega]$とする。
+\begin{itemize}
+  \item [(1)]$C_1$のみ
+  \item [(2)]$C_2$のみ
+  \item [(3)]$C_1, C_2$の直列接続
+  \item [(4)]$C_1, C_2$の並列接続
+\end{itemize}
 \end{document}

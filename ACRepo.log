@@ -1,4 +1,4 @@
-This is e-pTeX, Version 3.14159265-p3.7.1-161114-2.6 (utf8.sjis) (TeX Live 2017/W32TeX) (preloaded format=platex 2018.1.5)  12 FEB 2018 13:04
+This is e-pTeX, Version 3.14159265-p3.7.1-161114-2.6 (utf8.sjis) (TeX Live 2017/W32TeX) (preloaded format=platex 2018.1.5)  12 FEB 2018 13:37
 entering extended mode
  \write18 enabled.
  file:line:error style messages enabled.
@@ -889,7 +889,7 @@ LaTeX Warning: `h' float specifier changed to `ht'.
 [2]
 File: ./figure/RC_Series_Circuit.png Graphic file (type bmp)
 <./figure/RC_Series_Circuit.png>
- [3] [4] [5] (./ACRepo.aux) ) 
+ [3] [4] [5] [6] (./ACRepo.aux) ) 
 Here is how much of TeX's memory you used:
  28971 strings out of 493643
  673597 string characters out of 6151779
@@ -899,4 +899,4 @@ Here is how much of TeX's memory you used:
  934 hyphenation exceptions out of 8191
  55i,15n,54p,10394b,532s stack positions out of 5000i,500n,10000p,200000b,80000s
 
-Output written on ACRepo.dvi (5 pages, 17840 bytes).
+Output written on ACRepo.dvi (6 pages, 20588 bytes).
